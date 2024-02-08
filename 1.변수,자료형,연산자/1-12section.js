@@ -34,7 +34,8 @@ console.log("a : " + a); // 30
 console.log("b : " + b); // 1
 
 // 이 연산은 리액트에서도 많이 사용된다.
-// 특히 컴포넌트를 렌더링 할때 조건부로 컴포넌트를 보여주는 경우 활용되고
+// 특히 컴포넌트를 렌더링 할때 
+// 조건부로 컴포넌트를 보여주는 경우 활용되며
 // 이를 조건부 렌더링 이라고 한다.
 // https://react.dev/learn/conditional-rendering#conditional-ternary-operator--
 // 이 문서 우측에 Logical AND operator (&&) 있음
