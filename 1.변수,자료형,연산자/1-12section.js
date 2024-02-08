@@ -22,8 +22,8 @@ console.log("b : " + b); // 1
 
 console.log("논리 연산자 ||");
 value = ((a = a + 10) > 10) || ((b = b + 2) < 10);
-// ((a = 20) > 10) || ((b = b + 2) < 10);
-// (20 > 10) || ((b = b + 2) < 10);
+// ((a = 30) > 10) || ((b = b + 2) < 10);
+// (30 > 10) || ((b = b + 2) < 10);
 // true || ((b = b + 2) < 10);
 // true
 // || 오른쪽에 있는 값이 true든 false든
@@ -39,4 +39,3 @@ console.log("b : " + b); // 1
 // https://react.dev/learn/conditional-rendering#conditional-ternary-operator--
 // 이 문서 우측에 Logical AND operator (&&) 있음
 // 그리고 다음 section에는 Conditional (ternary) operator (? :)
-// 이 삼항 연산자 할거다.
