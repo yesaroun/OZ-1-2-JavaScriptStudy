@@ -6,3 +6,15 @@
 
 // 실행 예)
 // 연산 결과 : ㅇㅇ
+
+// 주요 변수 선언 및 초기화
+let n = 0;
+let result = 1;
+
+// 연산 및 처리(반복문 구성)
+while (n < 10) {
+  n++;
+  result *= n;
+}
+
+console.log("연산 결과 : ", result);
