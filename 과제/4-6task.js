@@ -1,5 +1,3 @@
-// 배열 실습
-
 // 사용자로부터 친구수를 입력받고
 // 입력받은 친구 수 만큼의 이름, 전화번호, 생일을 입력받고
 // 이름 배열과 전화번호 배열, 생일 배열로 구성하여
@@ -20,30 +18,3 @@
 // 홍길동    010-1111-1111  12/03
 // 김철수    010-2222-2222  03/02
 // 박놀부    010-3333-3333  07/01
-
-// 사용자 입력 처리 
-let friendCount;
-do {
-  friendCount = parseInt(prompt("입력 처리할 친구의 수 입력(명, 1~10) : "));
-} while (friendCount < 1 || friendCount > 10);
-
-// 배열 생성
-let names = [];
-let tels = [];
-let birthDays = [];
-
-// 이름, 전화번호, 생일 입력
-for (let i = 0; i < friendCount; i++) {
-  let input = prompt(`이름 전화번호 생일 입력[${i + 1}](공백 구분) : `);
-  [names[i], tels[i], birthDays[i]] = input.split(" ");
-}
-
-console.log("----------------------");
-console.log(`전체 친구 수 : ${friendCount}명`);
-console.log("----------------------");
-console.log("이름    전화번호    생일");
-
-for (let i = 0; i < friendCount; i++) {
-  console.log(`${names[i]} ${tels[i]} ${birthDays[i]}`);
-}
-console.log("----------------------");
