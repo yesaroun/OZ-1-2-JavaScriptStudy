@@ -32,13 +32,36 @@ numlist에서 5의 배수만을 남긴 [10, 5]를 return합니다.
 numlist에서 12의 배수만을 남긴 [120, 600, 12, 12]를 return합니다.
  */
 
-// 문제
+
+// A
 function solution(n, numlist) {
   var answer = [];
+  for (let i = 0; i < numlist.length; i++) {
+    if (numlist[i] % n === 0) {
+      answer.push(numlist[i]);
+    }
+  }
   return answer;
 }
 
-// 참고 테스트용
-let result = solution(3, [4, 5, 6, 7, 8, 9, 10, 11, 12])
-console.log(result);
+function solution2(n, numlist) {
+  var answer = [];
+  answer = numlist.filter(function (num) {
+    if (num % 3 === 0) {
+      return true
+    } else {
+      return false
+    }
+  })
+  return answer;
+}
+
+function solution3(n, numlist) {
+  var answer = [];
+  answer = numlist.filter((num) => num % 3 === 0)
+  return answer
+}
+
+// filter : https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+
 
